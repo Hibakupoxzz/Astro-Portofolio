@@ -1,5 +1,6 @@
 ---
 import  "../styles/global.css";
+import WaveBackground from "../components/Wave.jsx";
 ---
 
 <!DOCTYPE html>
@@ -11,43 +12,47 @@ import  "../styles/global.css";
 </head>
 <body>
 <section class="relative flex items-center justify-center h-screen bg-gray-50 font-rubik">
-  <div class="bg-white rounded-b-lg  w-[850px]">
+  <div class="bg-white rounded-b-lg w-[800px]">
 
     <div class="bg-[#383b43] text-white px-8 py-2 rounded-t-md text-left">
       <p>home</p>
     </div>
   
-  <div class="relative w-[850px] h-[500px] bg-white text-[#383b43] flex flex-col items-center justify-center rounded-b-lg border-2 space-y-2 z-10">
+  <div class="relative w-[800px] h-[480px] bg-white text-[#383b43] flex flex-col items-center justify-center rounded-b-lg border-2 space-y-2 z-10">
     <h1 class="text-[70px] font-semibold ">hi! <span class="text-[#D97D55]">i'm idannn</span> </h1>
-    <p class="text-[20px] pb-[70px]">game developer and web developer</p>
+    <p class="text-[20px] pb-[35px]">game developer and web developer</p>
     
     <div class="flex justify-center items-center gap-15 pb-10 text-[#383b43]">
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center transition-transform duration-200 hover:scale-110">
         <img src="user.svg" alt="about" class="w-[55px] cursor-pointer fill-[#383b43]">
         <p class="text-[16px] ">about</p>
       </div>
 
-      <div class="flex flex-col items-center">
-        <img src="link-alt.svg" alt="links" class="w-[55px] cursor-pointer">
+      <div class="flex flex-col items-center transition-transform duration-200 hover:scale-110">
+        <img src="link-alt.svg" alt="links" class="w-[55px] cursor-pointer ">
         <p class="text-[16px]">links</p>
       </div>
 
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center transition-transform duration-200 hover:scale-110">
         <img src="folder-open.svg" alt="project" class="w-[55px] cursor-pointer">
         <p class="text-[16px]">project</p>
       </div>
 
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center transition-transform duration-200 hover:scale-110">
         <img src="document.svg" alt="faq" class="w-[55px] cursor-pointer">
         <p class="text-[16px]">faq</p>
       </div>
 
-      <div class="flex flex-col items-center ">
+      <div class="flex flex-col items-center transition-transform duration-200 hover:scale-110">
         <img src="clip-mail.svg" alt="contact" class="w-[55px] cursor-pointer">
         <p class="text-[16px]">contact</p>
       </div>
     </div>
   </div>
 </section>
+<!-- Wave ditempel di bawah -->
+<div class="absolute bottom-0 left-0 right-0 z-0">
+  <WaveBackground client:load />
+</div>
 </body>
 </html>
